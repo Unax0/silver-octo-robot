@@ -29,5 +29,5 @@ const App = () => {
 
 // const element = <App/>
 
-const root = ReactDOM.createRoot(document.getElementById('root')); // Get the root DOM element
-root.render(<App/>); // Render the element into the root
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App/>); 
