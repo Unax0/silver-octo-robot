@@ -1,19 +1,33 @@
 import React from "react";
 import ReactDOM from 'react-dom/client';
 
-const element = (
-  <div>
-    <h1>My ToDo List</h1>
-    <input placeholder="search" />
+const ToDoList= () => {
+  return (
     <ul>
       <li>Install React</li>
       <li>Study React</li>
       <li>Use React</li>
       <li>Build React App</li>
     </ul>
-  </div>
-);
-console.log('Hello, Slava');
+  );
+};
+const AppHeader = () => {
+  return <h1>My ToDo List</h1>
+};
+const SearchPanel = () => {
+  return <input placeholder="search"/>
+};
+const App = () => {
+  return (
+    <div>
+      <AppHeader/>
+      <SearchPanel/>
+      <ToDoList/>
+    </div>
+  );
+};
+
+// const element = <App/>
 
 const root = ReactDOM.createRoot(document.getElementById('root')); // Get the root DOM element
-root.render(element); // Render the element into the root
+root.render(<App/>); // Render the element into the root
